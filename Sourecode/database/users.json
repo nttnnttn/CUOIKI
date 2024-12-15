@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "full_name": "a",
+      "email": "a@ex.vn",
+      "password": "123",
+      "role": "customer"
+    },
+    {
+      "full_name": "b",
+      "email": "b@ex.vn",
+      "password": "123",
+      "role": "staff"
+    },
+    {
+      "full_name": "dvfv",
+      "email": "q@ex.vn",
+      "password": "123",
+      "role": "manager"
+    },
+    {
+      "full_name": "eww",
+      "email": "wew@ex.vn",
+      "password": "123",
+      "role": "admin"
+    }
+  ]
+}

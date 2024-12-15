@@ -1,0 +1,165 @@
+User Story 1: Đăng ký tài khoản
+Là một khách hàng mới,tôi muốn đăng ký tài khoản bằng cách cung cấp tên, email và mật khẩu,
+Để tôi có thể đăng nhập và thực hiện mua sắm trên nền tảng thương mại điện tử.
+
+Tiêu chí chấp nhận:
+
+Người dùng điền đầy đủ thông tin: Tên, Email, Mật khẩu, và xác nhận mật khẩu.
+Email phải là duy nhất và phải hợp lệ
+Mật khẩu phải có ít nhất 6 ký tự và bao gồm chữ cái, số .
+Nếu thông tin hợp lệ, hệ thống gửi email xác nhận đăng ký.
+Quy trình này cần đảm bảo thông tin người dùng được xử lý chính xác (kiểm tra tính hợp lệ của email, mật khẩu). Một trong những yêu cầu quan trọng là gửi email xác nhận, giúp người dùng xác nhận tài khoản của họ. Điều này tạo sự an toàn và bảo mật trong việc đăng ký tài khoản.
+Nếu có lỗi hệ thống hiển thị thông báo lỗi nếu nhập sai những yêu cầu trên.
+(ví dụ: email đã tồn tại,...)
+
+User Story 2: Đăng nhập tài khoản
+Là một khách hàng đã đăng ký,
+Tôi muốn nhập email và mật khẩu để đăng nhập vào tài khoản của mình,để tôi có thể mua sắm, theo dõi đơn hàng và cập nhật thông tin cá nhân.
+
+Tiêu chí chấp nhận:
+
+Người dùng nhập email và mật khẩu đã đăng ký.
+Nếu đăng nhập thành công, hệ thống chuyển đến trang chủ hoặc trang cá nhân của người dùng.
+Nếu mật khẩu sai, hệ thống hiển thị thông báo lỗi "Mật khẩu không đúng" hoặc tài khoản chưa được đăng ký
+
+User Story 3: Quản lý tài khoản (Admin)
+Là một Admin,
+Tôi muốn có khả năng tạo, sửa và xóa tài khoản người dùng,
+Để tôi có thể quản lý, kiểm soát nhân viên và khách hàng trong hệ thống.
+
+Tiêu chí chấp nhận:
+
+Admin có thể tạo tài khoản, chỉnh sửa thông tin cho người dùng với vai trò khách hàng, nhân viên, hoặc quản lý.
+Admin có thể xóa tài khoản người dùng.
+Các thay đổi sẽ được phản hồi ngay lập tức và cập nhật trong cơ sở dữ liệu.
+User Story 4: Đổi mật khẩu
+Là một khách hàng đã đăng ký,
+Tôi muốn có thể thay đổi mật khẩu của mình từ tài khoản cá nhân,
+Để tôi có thể đảm bảo tính bảo mật và bảo vệ tài khoản của mình.
+
+Tiêu chí chấp nhận:
+
+Người dùng phải nhập chính xác mật khẩu cũ.
+Mật khẩu mới phải khớp với yêu cầu bảo mật (tối thiểu 6 ký tự).
+Hệ thống thông báo thành công hoặc lỗi (ví dụ: mật khẩu cũ không chính xác).
+User Story 5: Quản lý quyền truy cập (Manager)
+Là một Manager,
+Tôi muốn có thể xem thông tin khách hàng và nhân viên,
+Để tôi có thể quản lý hiệu quả các tài khoản trong hệ thống.
+
+Tiêu chí chấp nhận:
+
+Manager có thể xem danh sách người dùng (khách hàng và nhân viên)
+Manager không thể xóa tài khoản người dùng, điều này chỉ có Admin quyền
+User Story cho Admin
+Là một Admin,
+Tôi muốn có thể quản lý tài khoản người dùng (bao gồm tạo, sửa,khôi phục và xóa tài khoản),
+Để tôi có thể kiểm soát người dùng trong hệ thống.
+
+Tiêu chí chấp nhận:
+
+Admin có thể tạo tài khoản mới và chỉnh sửa thông tin cho người dùng, với vai trò khách hàng, nhân viên, hoặc quản lý.
+Admin có thể xóa tài khoản tất cả người dùng khỏi hệ thống.
+Các thay đổi sẽ được cập nhật ngay lập tức trong hệ thống.
+2. User Story cho Manager
+Là một Manager,
+Tôi muốn có thể xem và chỉnh sửa thông tin của người dùng (khách hàng và nhân viên),
+Để tôi có thể quản lý và hỗ trợ người dùng một cách hiệu quả.
+
+Tiêu chí chấp nhận:
+
+Manager có thể xem danh sách người dùng (khách hàng và nhân viên) trong hệ thống..
+Manager có thể theo dõi hoạt động của người dùng trong hệ thống nhưng không có quyền xóa tài khoản người dùng.
+3. User Story cho Staff
+Là một Staff,
+Tôi muốn có thể hỗ trợ người dùng khi họ gặp vấn đề về tài khoản (ví dụ: quên mật khẩu, cần hỗ trợ đăng nhập),
+Để tôi có thể đảm bảo người dùng không gặp khó khăn khi sử dụng hệ thống.
+
+Tiêu chí chấp nhận:
+
+Staff có thể cung cấp hỗ trợ cho người dùng trong trường hợp họ quên mật khẩu hoặc gặp vấn đề trong việc đăng nhập.
+Staff có thể xác nhận và cập nhật thông tin người dùng sau khi người dùng yêu cầu (chỉ có thể sửa thông tin cơ bản như email, số điện thoại).
+Staff không có quyền tạo, sửa, hoặc xóa tài khoản người dùng.
+4. User Story cho Customer
+Là một Customer,
+Tôi muốn có thể đăng ký tài khoản và đăng nhập vào hệ thống bằng email và mật khẩu,
+Để tôi có thể mua sắm và theo dõi đơn hàng của mình.
+
+Tiêu chí chấp nhận:
+
+Khách hàng có thể tạo tài khoản mới bằng cách nhập tên, email, mật khẩu, và xác nhận mật khẩu.
+Khách hàng có thể đăng nhập vào tài khoản của mình bằng email và mật khẩu đã đăng ký.
+Khách hàng có thể cập nhật thông tin cá nhân như tên, địa chỉ giao hàng.
+Khách hàng có thể thay đổi mật khẩu từ trang cá nhân.
+User Story cho Manager
+1. Xem lịch sử hoạt động người dùng
+Là một Manager,
+Tôi muốn có thể xem lịch sử hoạt động của người dùng như đăng nhập, mua hàng,
+Để tôi có thể theo dõi và phân tích hoạt động của người dùng.
+
+Tiêu chí chấp nhận:
+
+Manager có thể xem lịch sử đăng nhập, mua sắm và các hoạt động liên quan của người dùng.
+Manager có thể lọc các hoạt động theo thời gian hoặc loại hành động (đăng nhập, mua sắm).
+Hệ thống cung cấp báo cáo chi tiết về hoạt động của người dùng trong thời gian nhất định.
+2. Gửi thông báo cho khách hàng
+Là một Manager,
+Tôi muốn gửi thông báo đến khách hàng về các chương trình khuyến mãi hoặc thay đổi trong chính sách,
+Để khách hàng nhận được thông tin mới nhất và có thể tận dụng các ưu đãi.
+
+Tiêu chí chấp nhận:
+
+Manager có thể tạo và gửi thông báo đến toàn bộ khách hàng hoặc nhóm khách hàng theo phân loại.
+Thông báo có thể bao gồm văn bản hoặc liên kết đến các trang khuyến mãi.
+Khách hàng nhận được thông báo trên hệ thống hoặc số điện thoại.
+User Story cho Staff
+1. Xử lý yêu cầu hỗ trợ khách hàng
+Là một Staff,
+Tôi muốn có thể nhận và xử lý yêu cầu hỗ trợ từ khách hàng,
+Để khách hàng có thể giải quyết vấn đề nhanh chóng.
+
+Tiêu chí chấp nhận:
+
+Staff có thể xem danh sách yêu cầu hỗ trợ từ khách hàng.
+Staff có thể phản hồi yêu cầu và cung cấp giải pháp hoặc thông tin hỗ trợ cho khách hàng.
+Hệ thống ghi nhận tất cả các yêu cầu hỗ trợ và trạng thái xử lý.
+2. Hỗ trợ đăng nhập và khôi phục mật khẩu
+Là một Staff,
+Tôi muốn hỗ trợ khách hàng khôi phục mật khẩu hoặc đăng nhập lại tài khoản,
+Để khách hàng có thể truy cập vào tài khoản của họ khi gặp sự cố.
+
+Tiêu chí chấp nhận:
+
+Staff có thể gửi yêu cầu khôi phục mật khẩu cho khách hàng qua email hoặc số điện thoại.
+Staff có thể hỗ trợ khách hàng đăng nhập lại tài khoản khi gặp vấn đề đăng nhập.
+Hệ thống ghi lại tất cả các sự kiện hỗ trợ để dễ dàng kiểm tra.
+User Story cho Customer
+1. Đăng ký tài khoản mới
+Là một Customer,
+Tôi muốn có thể đăng ký tài khoản mới bằng cách nhập email và mật khẩu,
+Để tôi có thể sử dụng các chức năng của ứng dụng như mua sắm, theo dõi đơn hàng.
+
+Tiêu chí chấp nhận:
+
+Customer nhập email, mật khẩu và tên đầy đủ để đăng ký tài khoản.
+Hệ thống kiểm tra tính hợp lệ của email và mật khẩu (email phải duy nhất, mật khẩu có độ dài tối thiểu). Sau khi đăng ký thành công, hệ thống gửi email xác nhận cho người dùng.
+2. Quên mật khẩu
+Là một Customer,
+Tôi muốn có thể yêu cầu khôi phục mật khẩu khi tôi quên mật khẩu,
+Để tôi có thể lấy lại quyền truy cập vào tài khoản của mình.
+
+Tiêu chí chấp nhận:
+
+Customer có thể yêu cầu khôi phục mật khẩu qua email hoặc số điện thoại.
+Hệ thống gửi liên kết khôi phục mật khẩu đến email hoặc số điện thoại đã đăng ký.
+Customer có thể thay đổi mật khẩu sau khi nhận được liên kết khôi phục.
+3. Cập nhật thông tin cá nhân
+Là một Customer,
+Tôi muốn có thể cập nhật thông tin cá nhân như tên, địa chỉ giao hàng, và số điện thoại,
+Để thông tin của tôi luôn chính xác và phục vụ cho việc giao hàng.
+
+Tiêu chí chấp nhận:
+
+Customer có thể chỉnh sửa thông tin cá nhân từ trang tài khoản.
+Hệ thống thông báo xác nhận việc cập nhật thông tin thành công.
+Mọi thay đổi sẽ được cập nhật ngay lập tức và có hiệu lực ngay sau khi lưu.

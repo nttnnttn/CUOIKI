@@ -1,0 +1,10 @@
+	Nhiệm vụ	Ghi chú
+Nguyễn Thị Thanh Ngân	Prototype + viết code	
+Nguyễn Thị Nhật Loan	User story	
+Phan Hoàng Khiếu Anh	Prototype 	
+Huỳnh Lê Thùy Trang	System modelling	
+Ngô Thị Như Thảo	System modelling	
+
+Chạy code:
+Chạy file thu.py
+Có thể đăng nhập với các tài khoản có sẵn trong users.json hoặc nhấn nút đăng nhập để tạo tài khoản mới.
